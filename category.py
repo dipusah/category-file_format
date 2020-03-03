@@ -51,3 +51,11 @@ for file in files:
                 os.path.join(BASE_DIR, file),
                 os.path.join(folder_path2, file)
             )
+     if parts[-1] in PYTHON:
+        folder_path5 = os.path.join(BASE_DIR, 'PYTHON')
+        if not os.path.exists(folder_path5):
+            os.mkdir(folder_path5)
+            os.rename(
+                os.path.join(BASE_DIR, file),
+                os.path.join(folder_path5, file)
+            )       
